@@ -1,0 +1,29 @@
+{
+  "name": "runner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "bin": {
+    "run": "./bin/run"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "tsc -w",
+    "compile": "tsc",
+    "runner":"cd examples && run"
+  },
+  "keywords": [
+    "run"
+  ],
+  "author": "tanay pingalkar",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "esm": "^3.2.25"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.35"
+  }
+}
