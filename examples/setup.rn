@@ -1,3 +1,4 @@
-RUN "echo lol" 
-PRINT " ferhfewjhf "
-RED "this is red text"
+DO "touch new_run_file.rn"
+RUN "cowsay this is runner you get it"
+PRINT "welcome to runner"
+BLUE "color full text is here"
