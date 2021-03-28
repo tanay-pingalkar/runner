@@ -6,13 +6,7 @@ export interface token {
   arguments: Array<string>;
   lineNumber: number;
 }
-export interface tagsMeta {
-  token: {
-    tagName: tag;
-    lineNumber: number;
-  };
-  function: Function;
-}
+
 export type tags = {
-  [RUN in tag]: tagsMeta;
+  [RUN in tag]?: (arg: Array<string>) => any;
 };

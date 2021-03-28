@@ -5,10 +5,9 @@ export class Split {
   arr: _2dArray;
   constructor(str: string) {
     this.str = str;
-    this.splitLines();
+    this.split();
   }
-  splitLines() {
-    console.log(this.str.split(/\n/g));
+  split() {
     this.arr = this.splitWords(this.str.split(/\n/g));
   }
 

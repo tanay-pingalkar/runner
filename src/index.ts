@@ -1,4 +1,4 @@
-import { Split } from "./processes/split";
+import { Runner } from "./processes/runner";
 import { fileName, _2dArray } from "./typescript/types";
 import { readFile } from "./utils/readFile";
 
@@ -8,6 +8,5 @@ export const cli = (args: Array<string>) => {
     fileName = args[2];
   }
   const file: string = readFile(fileName);
-  const _2dArr: _2dArray = new Split(file)._2dArr();
-  console.log(_2dArr);
+  new Runner(file);
 };

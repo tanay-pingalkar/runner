@@ -1,2 +1,3 @@
-RUN "touch lol.js" "hjfgjesg"
-PRINT " ferhfewjhf"   "ferwggtgw"
+RUN "echo lol" 
+PRINT " ferhfewjhf "
+RED "this is red text"
