@@ -2,6 +2,7 @@ import { tags } from "../store/tags";
 import { tag, tokens, _2dArray } from "src/typescript/types";
 import { err } from "../utils/err";
 import { Split } from "./split";
+import { isExist } from "src/typescript/interfaces";
 
 export class Lexer extends Split {
   tokens: tokens = [];
@@ -11,20 +12,41 @@ export class Lexer extends Split {
   }
   tokenizer(): tokens {
     this.arr.forEach((ele: Array<string>, i) => {
+      const givenTag = ele[0].trim() as tag;
+      const givenArgument: Array<string> = ele.slice(1);
+      const { tag, argument } = this.isExist(givenTag, givenArgument, i + 1);
       this.tokens.push({
-        tag: this.isExist(ele[0].trim() as tag),
-        arguments: ele.slice(1),
+        tag: tag,
+        arguments: argument,
         lineNumber: i + 1,
       });
     });
     return this.tokens;
   }
-  isExist(str: tag): tag {
-    if (tags[str]) {
-      return str;
+  isExist(str: tag, args: Array<string>, lineNumber: number): isExist {
+    const tag = tags[str];
+    if (tag) {
+      if (tag.arguments === args.length) {
+        return {
+          tag: str,
+          argument: args,
+        };
+      } else {
+        err(
+          `only ${tag.arguments} arguments are excepted, you have ${args.length}`,
+          lineNumber
+        );
+        return {
+          tag: "sorry",
+          argument: [],
+        };
+      }
     } else {
-      err(`${str} is not a valid tag`);
-      return "sorry";
+      err(`${str} is not a valid tag`, lineNumber);
+      return {
+        tag: "sorry",
+        argument: [],
+      };
     }
   }
 }

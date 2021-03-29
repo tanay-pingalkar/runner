@@ -1,10 +1,16 @@
 // @ts-ignore
 import cowsay from "cowsay";
+import { tagContent } from "../../typescript/interfaces";
 
-export const COWSAY = (arg: Array<string>) => {
+export const COWSAY_FUNCTION = (arg: Array<string>) => {
   console.log(
     cowsay.say({
       text: arg[0],
     })
   );
+};
+
+export const COWSAY: tagContent = {
+  function: COWSAY_FUNCTION,
+  arguments: 1,
 };

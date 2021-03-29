@@ -7,6 +7,14 @@ export interface token {
   lineNumber: number;
 }
 
+export interface tagContent {
+  function: (arg: Array<string>) => any;
+  arguments: number;
+}
 export type tags = {
-  [RUN in tag]?: (arg: Array<string>) => any;
+  [RUN in tag]?: tagContent;
 };
+export interface isExist {
+  tag: tag;
+  argument: Array<string>;
+}
