@@ -13,9 +13,5 @@
 ## why this is for
 this is a basic tool for grouping scripts and running them together.
 ## usage
-create a file called "setup" with ".rn" extension and write and save the following
-```
-RUN "echo i am running"
-```
-and in terminal run `run`
+After running `run setup`, it has created a test.rn file where you can write code like setup.rn have and can run that file by `run test`
 ### currently this project is in construction and wont perform what you want!!!
