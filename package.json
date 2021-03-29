@@ -12,7 +12,8 @@
   "scripts": {
     "dev": "tsc -w",
     "compile": "tsc",
-    "runner":"cd examples && run"
+    "runner": "cd examples && run",
+    "format": "npx prettier --write ."
   },
   "keywords": [
     "run"
@@ -21,9 +22,12 @@
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.0",
-    "esm": "^3.2.25"
+    "cowsay": "^1.4.0",
+    "esm": "^3.2.25",
+    "spawn-command": "^0.0.2-1"
   },
   "devDependencies": {
-    "@types/node": "^14.14.35"
+    "@types/node": "^14.14.35",
+    "prettier": "2.2.1"
   }
 }

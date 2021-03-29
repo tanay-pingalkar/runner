@@ -11,4 +11,7 @@ export type tag =
   | "ASK"
   | "RED"
   | "BLUE"
+  | "GREEN"
+  | "CONCURRENT"
+  | "COWSAY"
   | "sorry";
