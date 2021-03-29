@@ -1,6 +1,6 @@
 # runner
 open source tool / language for making and running setups
- ![alt text](https://github.com/tanay-pingalkar/runner/blob/master/logo.html)
+ ![alt text](https://github.com/tanay-pingalkar/runner/blob/master/Frame%201.png)
 ## running on local machine
 - fork the repo
 - clone forked repo
