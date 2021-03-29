@@ -1,6 +1,6 @@
 # runner
 open source tool / language for making and running setups
-
+ ![alt text](https://github.com/tanay-pingalkar/runner/logo.png)
 ## running on local machine
 - fork the repo
 - clone forked repo
