@@ -1,7 +1,12 @@
 # runner
+<<<<<<< HEAD
 
 open source tool / language for making and running setups
 
+=======
+### open source tool / language for making and running setups ###
+ ![alt text](https://github.com/tanay-pingalkar/runner/blob/master/Frame%201.png)
+>>>>>>> 38800dda1ce5dc0be08a1f9ad5aca09972029374
 ## running on local machine
 
 - fork the repo
