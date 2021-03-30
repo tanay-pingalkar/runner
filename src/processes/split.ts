@@ -19,8 +19,16 @@ export class Split {
         if (ele.trim() === "") {
           temp[temp.length - 1].splice(i, 1);
         }
+        if (ele.startsWith("//")) {
+          temp[temp.length - 1].splice(i);
+        }
       });
     });
+    // remove all empty lines from string
+    temp = temp.filter(function (el) {
+      return el.length != 0;
+    });
+
     return temp;
   }
   _2dArr(): _2dArray {
