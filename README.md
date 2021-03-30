@@ -22,5 +22,6 @@ this is a basic tool for grouping scripts and running them together.
 ## usage
 
 After running `run setup`, it has created a test.rn file where you can write code like setup.rn have and can run that file by `run test`
+Visit [CHEATSHEET.md](https://github.com/tanay-pingalkar/runner/blob/master/CHEATSHEET.md) to learn more about runner
 
 ### currently this project is in construction and wont perform what you want
