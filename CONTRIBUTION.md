@@ -12,6 +12,7 @@
 - navigate to `examples` folder and run `run`
 - it will create a test.rn, if it wont create it, create test.rn file on your own
 - in test.rn file, you can test you code or feature you have added, `run test` in `examples` folder will interpret test.rn file 
+- run `npm run dev` or `tsc` to convert typescript
 
 <h3>before making pr</h3>
 
