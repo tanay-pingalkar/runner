@@ -14,4 +14,8 @@ export type tag =
   | "GREEN"
   | "CONCURRENT"
   | "COWSAY"
+  | "EXIT"
+  | "RUN_ASYNC"
+  | "DO_ASYNC"
+  | "CONCURRENT"
   | "sorry";

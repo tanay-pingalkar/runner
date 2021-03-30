@@ -10,11 +10,9 @@ export class Runner extends Lexer {
   start() {
     this.tokens.forEach((token) => {
       console.log(
-        "\n",
-        chalk.blue("["),
+        chalk.blue("\n ["),
         chalk.white(token.lineNumber),
-        chalk.blue("]"),
-        "----------------------------------------------------+"
+        chalk.blue("]")
       );
       tags[token.tag].function(token.arguments);
     });
