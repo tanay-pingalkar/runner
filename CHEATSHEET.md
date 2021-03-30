@@ -15,5 +15,5 @@
 
 |    TAG    |  argument 1   |       Examples       |                              Usage                               |
 | :-------: | :-----------: | :------------------: | :--------------------------------------------------------------: |
-| RUN_ASYNC | shell command | `RUN "yarn init -y"` | use to run big shell command in background like installation etc |
-|    DO     | shell command |      `DO "ls"`       | use to run small shell commands in background like ls, echo etc  |
+| RUN_ASYNC | shell command | `RUN_ASYNC "yarn init -y"` | use to run big shell command in background like installation etc |
+| DO_ASYNC  | shell command |      `DO_ASYNC "ls"`       | use to run small shell commands in background like ls, echo etc  |
