@@ -25,7 +25,7 @@ After running `run setup`, it has created a test.rn file where you can write cod
 Visit [CHEATSHEET.md](https://github.com/tanay-pingalkar/runner/blob/beta/CHEATSHEET.md) to learn more about runner
 
 ## contributers are highly welcome
-<h4> runner is open source and will live open source </h4>
+runner is open source and will live open source, 
 read  [CONTRIBUTION.md](https://github.com/tanay-pingalkar/runner/blob/beta/CONTRIBUTION.md) to know more about how contribution process work
 
 ### currently this project is in construction and wont perform what you want
