@@ -13,7 +13,7 @@
 - run `npm link`
 - run `cd examples`
 - run `run` or `run setup`
-- for developement, run `npm dev`
+- for developement, run `npm run dev`
 
 ## why this is for
 
