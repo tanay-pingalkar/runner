@@ -33,13 +33,7 @@ After running `run setup`, it has created a test.rn file where you can write cod
 Visit [CHEATSHEET.md](https://github.com/tanay-pingalkar/runner/blob/beta/CHEATSHEET.md) to learn more about runner or go to interactive mode by running `runner` in terminal and type `CHEATSHEET` to see cheatsheet in your terminal.
 
 ## contributers are highly welcome
-<<<<<<< HEAD
-
-runner is open source and will live open source,
-read [CONTRIBUTION.md](https://github.com/tanay-pingalkar/runner/blob/beta/CONTRIBUTION.md) to know more about how contribution process work
-=======
 runner is open source and will live open source, 
 read  [CONTRIBUTION.md](https://github.com/tanay-pingalkar/runner/blob/beta/CONTRIBUTION.md) and  [CODE_OF_CONDUCT.md](https://github.com/tanay-pingalkar/runner/blob/beta/CODE_OF_CONDUCT.md) to know more about how contribution process work
->>>>>>> 038cb0cf815b547ed87fcd04dc2da5bfe9f90d7b
 
 ### currently this project is in construction and is not well polished
