@@ -1,7 +1,7 @@
 import chalk from "chalk";
 import { tagContent } from "src/typescript/interfaces";
 
-const EXIT_FUNCTION = (): never => {
+const EXIT_FUNCTION = async (): Promise<never> => {
   console.log(chalk.redBright("Exit"));
   process.exit();
 };

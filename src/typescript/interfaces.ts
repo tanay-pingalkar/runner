@@ -8,7 +8,7 @@ export interface token {
 }
 
 export interface tagContent {
-  function: (arg: Array<string>) => boolean | Promise<boolean>;
+  function: (arg: Array<string>) => Promise<boolean>;
   arguments: number;
 }
 export type tags = {

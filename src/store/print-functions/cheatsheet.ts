@@ -1,10 +1,10 @@
 import { tagContent } from "../../typescript/interfaces";
 import { terminal as term } from "terminal-kit";
 
-export const CHEATSHEET_FUNCTION = () => {
+export const CHEATSHEET_FUNCTION = async () => {
   console.log("welcome to cheat sheet");
   // @ts-ignore
-  term.table(
+  await term.table(
     [
       ["^TAG ", "^arguments", "^Rexample", "^Rusage"],
       [

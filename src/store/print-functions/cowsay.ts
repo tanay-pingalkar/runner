@@ -2,7 +2,7 @@
 import cowsay from "cowsay";
 import { tagContent } from "../../typescript/interfaces";
 
-export const COWSAY_FUNCTION = (arg: Array<string>) => {
+export const COWSAY_FUNCTION = async (arg: Array<string>) => {
   console.log(
     cowsay.say({
       text: arg[0],

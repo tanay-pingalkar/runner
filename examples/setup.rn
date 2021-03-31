@@ -14,6 +14,3 @@ COWSAY "this cowsay"
 
 // this is use to run 2 shell commands CONCURRENT, this is a beta feature and maybe contain bugs this excepts many arguments
 CONCURRENT "ls" "touch lol.js"
-
-// this is use to run shell commands asyncronoumously, this is a beta feature and maybe contain bugs this excepts 1 arguments
-DO_ASYNC "rm lol.js"

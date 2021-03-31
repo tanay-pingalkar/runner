@@ -3,6 +3,7 @@ import { tag, tokens, _2dArray } from "src/typescript/types";
 import { err } from "../utils/err";
 import { Split } from "./split";
 import { isExist } from "src/typescript/interfaces";
+import { exit } from "process";
 
 export class Lexer extends Split {
   tokens: tokens = [];
@@ -36,17 +37,11 @@ export class Lexer extends Split {
           `only ${tag.arguments} arguments are excepted, you have ${args.length}`,
           lineNumber
         );
-        return {
-          tag: "sorry",
-          argument: [],
-        };
+        exit();
       }
     } else {
       err(`${str} is not a valid tag`, lineNumber);
-      return {
-        tag: "sorry",
-        argument: [],
-      };
+      exit();
     }
   }
 }

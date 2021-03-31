@@ -1,6 +1,6 @@
 import { tagContent } from "../../typescript/interfaces";
 
-export const PRINT_FUNCTION = (arg: Array<string>) => {
+export const PRINT_FUNCTION = async (arg: Array<string>) => {
   console.log(arg[0]);
   return true;
 };
