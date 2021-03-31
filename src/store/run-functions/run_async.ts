@@ -5,6 +5,7 @@ import { tagContent } from "../../typescript/interfaces";
 
 export const RUN_ASYNC_FUNCTION = async (arg: Array<string>) => {
   const splitted = arg[0].split(/\s/g);
+  let bol: boolean = true;
   const spawned = spawn(splitted[0], splitted.splice(1));
   spawned.on("message", (data) => {
     console.log(data);
@@ -16,9 +17,9 @@ export const RUN_ASYNC_FUNCTION = async (arg: Array<string>) => {
     warn(data);
   });
   spawned.on("error", (er: string) => {
-    err(er.toString());
+    bol = err(er.toString());
   });
-  return;
+  return bol;
 };
 export const RUN_ASYNC: tagContent = {
   function: RUN_ASYNC_FUNCTION,

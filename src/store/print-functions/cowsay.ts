@@ -8,6 +8,7 @@ export const COWSAY_FUNCTION = (arg: Array<string>) => {
       text: arg[0],
     })
   );
+  return true;
 };
 
 export const COWSAY: tagContent = {

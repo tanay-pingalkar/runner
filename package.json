@@ -1,10 +1,12 @@
 {
-  "name": "runner",
+  "name": "@tanay-pingalkar/runner",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
   "bin": {
-    "run": "./bin/run"
+    "run": "./bin/run",
+    "runner":"./bin/runner",
+    "@tanay-pingalkar/runner":"./bin/runner"
   },
   "publishConfig": {
     "access": "public"
@@ -16,7 +18,8 @@
     "format": "npx prettier --write ."
   },
   "keywords": [
-    "run"
+    "run",
+    "runner"
   ],
   "author": "tanay pingalkar",
   "license": "ISC",

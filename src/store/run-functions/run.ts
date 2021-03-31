@@ -7,11 +7,11 @@ export const RUN_FUNCTION = async (arg: Array<string>) => {
   const splitted = arg[0].split(/\s/g);
   const spawn = spawnSync(splitted[0], splitted.splice(1));
   if (spawn.stdout) console.log(spawn.stdout.toString());
-  if (spawn.error) err(spawn.error.message.toString());
+  if (spawn.error) return err(spawn.error.message.toString());
   if (spawn.stderr && spawn.stderr.toString().trim() != "") {
     warn(spawn.stderr.toString());
   }
-  return;
+  return true;
 };
 export const RUN: tagContent = {
   function: RUN_FUNCTION,

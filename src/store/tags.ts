@@ -1,5 +1,6 @@
 import { tags as tag } from "../typescript/interfaces";
 import { EXIT } from "./more-functions/exit";
+import { CHEATSHEET } from "./print-functions/cheatsheet";
 import { BLUE, RED, GREEN } from "./print-functions/colorText";
 import { COWSAY } from "./print-functions/cowsay";
 import { PRINT } from "./print-functions/print";
@@ -23,6 +24,7 @@ export const tags: tag = {
   BLUE: BLUE,
   GREEN: GREEN,
   COWSAY: COWSAY,
+  CHEATSHEET: CHEATSHEET,
 
   // more functions
   EXIT: EXIT,

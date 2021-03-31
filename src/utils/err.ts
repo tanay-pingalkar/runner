@@ -1,7 +1,6 @@
 import chalk from "chalk";
-import { exit } from "process";
 
-export const err = (err: string, lineNumber?: number) => {
+export const err = (err: string, lineNumber?: number): false => {
   console.log(chalk.bold(chalk.redBright("Ω")), chalk.red(err));
   if (lineNumber) {
     console.log(
@@ -11,5 +10,5 @@ export const err = (err: string, lineNumber?: number) => {
       chalk.blue("]")
     );
   }
-  exit();
+  return false;
 };

@@ -1,14 +1,14 @@
 import { execSync } from "child_process";
-import { warn } from "../../utils/warn";
 import { tagContent } from "../../typescript/interfaces";
+import { err } from "../../utils/err";
 
 export const DO_FUNCTION = (arg: Array<string>) => {
   try {
     execSync(arg[0], { stdio: "ignore" });
   } catch {
-    warn("an unusual error has occure");
+    return err("an unusual error has occure");
   }
-  return;
+  return true;
 };
 export const DO: tagContent = {
   function: DO_FUNCTION,

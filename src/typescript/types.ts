@@ -18,4 +18,5 @@ export type tag =
   | "RUN_ASYNC"
   | "DO_ASYNC"
   | "CONCURRENT"
+  | "CHEATSHEET"
   | "sorry";

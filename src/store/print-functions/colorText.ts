@@ -4,6 +4,7 @@ import { tagContent } from "../../typescript/interfaces";
 // red
 export const RED_FUNCTION = (arg: Array<string>) => {
   console.log(chalk.redBright(arg[0]));
+  return true;
 };
 export const RED: tagContent = {
   function: RED_FUNCTION,
@@ -13,6 +14,7 @@ export const RED: tagContent = {
 //blue
 export const BLUE_FUNCTION = (arg: Array<string>) => {
   console.log(chalk.blue(arg[0]));
+  return true;
 };
 export const BLUE: tagContent = {
   function: BLUE_FUNCTION,
@@ -22,6 +24,7 @@ export const BLUE: tagContent = {
 //green
 export const GREEN_FUNCTION = (arg: Array<string>) => {
   console.log(chalk.green(arg[0]));
+  return true;
 };
 export const GREEN: tagContent = {
   function: GREEN_FUNCTION,

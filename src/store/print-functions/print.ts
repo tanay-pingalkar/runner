@@ -2,7 +2,7 @@ import { tagContent } from "../../typescript/interfaces";
 
 export const PRINT_FUNCTION = (arg: Array<string>) => {
   console.log(arg[0]);
-  return;
+  return true;
 };
 
 export const PRINT: tagContent = {
