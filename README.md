@@ -19,6 +19,7 @@
 - run `cd examples`
 - run `run` or `run setup`
 - for developement, run `npm run dev`
+- to enter interactive mode run `runner`in your terminal
 
 ## why this is for
 
