@@ -12,5 +12,6 @@ BLUE "color full text is here"
 // this is use to print text using cowsay, it excepts 1 argument
 COWSAY "this cowsay"
 
+
 // this is use to run 2 shell commands CONCURRENT, this is a beta feature and maybe contain bugs this excepts many arguments
 CONCURRENT "ls" "touch lol.js"

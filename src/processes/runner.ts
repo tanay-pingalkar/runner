@@ -11,14 +11,13 @@ export class Runner extends Lexer {
     this.start();
   }
   async start() {
+    const token: token = this.tokens[this.i];
     console.log(
       chalk.blue("\n ["),
-      chalk.white(this.tokens[this.i].lineNumber),
+      chalk.white(token.lineNumber),
       chalk.blue("]")
     );
-    const res = await tags[this.tokens[this.i].tag].function(
-      this.tokens[this.i].arguments
-    );
+    const res = await tags[token.tag].function(token.arguments);
     if (!res || !this.tokens[this.i + 1]) exit();
     else {
       this.i = this.i + 1;
