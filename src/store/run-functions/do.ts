@@ -2,7 +2,7 @@ import { execSync } from "child_process";
 import { tagContent } from "../../typescript/interfaces";
 import { err } from "../../utils/err";
 
-export const DO_FUNCTION = (arg: Array<string>) => {
+export const DO_FUNCTION = async (arg: Array<string>) => {
   try {
     execSync(arg[0], { stdio: "ignore" });
   } catch {
