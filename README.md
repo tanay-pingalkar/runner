@@ -28,4 +28,4 @@ Visit [CHEATSHEET.md](https://github.com/tanay-pingalkar/runner/blob/beta/CHEATS
 runner is open source and will live open source, 
 read  [CONTRIBUTION.md](https://github.com/tanay-pingalkar/runner/blob/beta/CONTRIBUTION.md) to know more about how contribution process work
 
-### currently this project is in construction and wont perform what you want
+### currently this project is in construction and is not well polished
