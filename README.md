@@ -4,6 +4,11 @@
 
 ![alt text](https://github.com/tanay-pingalkar/runner/blob/master/Frame%201.png)
 
+## feature
+- concurrency
+- gist support `run gist:GIST_ID`
+- simple and easy
+- interractive mode
 ## running on local machine
 
 - fork the repo
