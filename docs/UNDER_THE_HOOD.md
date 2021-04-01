@@ -43,7 +43,7 @@ export const tags = {
 };
 ```
 
-inside runner.ts file inside processes folder, `start()` starts an async recursion untill `i` becomes equal to lenght of tokens, in that recursion the code is like this `tags[this.tokens[i].tag].function(this.tokens[i].argumemts)`, i think now you get the idea, this single line is equal to whole if else, btw tags is imported from store. Look how easy is it to added a function..before adding one, make to sure add type in typescript/types.ts.
+inside runner.ts file inside processes folder, `start()` starts an async recursion untill `i` becomes equal to lenght of tokens, in that recursion the code is like this `tags[this.tokens[i].tag].function(this.tokens[i].argumemts)`, i think now you get the idea, this single line is equal to whole if else, btw tags is imported from store. Look how easy is it to add a new function..before adding one, take effort add type in typescript/types.ts for making other people easy to understand code.
 
 If i have missed anything or if there is any blunder in typos, let me know in github issue.
 
