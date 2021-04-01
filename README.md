@@ -30,7 +30,8 @@ this is a basic tool for grouping scripts and running them together.
 ## usage
 
 After running `run setup`, it has created a test.rn file where you can write code like setup.rn have and can run that file by `run test`
-Visit [CHEATSHEET.md](https://github.com/tanay-pingalkar/runner/blob/beta/CHEATSHEET.md) or [docs](https://github.com/tanay-pingalkar/runner/blob/Docs/docs/) to learn more about runner or go to interactive mode by running `runner` in terminal and type `CHEATSHEET` to see cheatsheet in your terminal.
+
+Visit [CHEATSHEET.md](https://github.com/tanay-pingalkar/runner/blob/beta/docs/CHEATSHEET.md) or [docs](https://github.com/tanay-pingalkar/runner/blob/Docs/docs/) to learn more about runner or go to interactive mode by running `runner` in terminal and type `CHEATSHEET` to see cheatsheet in your terminal.
 
 ## contributers are highly welcome
 runner is open source and will live open source, 
