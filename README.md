@@ -2,7 +2,7 @@
 
 ## open source tool / language for making and running setups
 
-![alt text](https://github.com/tanay-pingalkar/runner/blob/master/Frame%201.png)
+![alt text](https://github.com/tanay-pingalkar/runner/blob/beta/Frame%201.png)
 
 ## features
 
