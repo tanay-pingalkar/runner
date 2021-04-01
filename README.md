@@ -4,7 +4,7 @@
 
 ![alt text](https://github.com/tanay-pingalkar/runner/blob/master/Frame%201.png)
 
-## feature
+## features
 
 - concurrency
 - gist support `run gist:GIST_ID`
