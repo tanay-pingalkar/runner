@@ -1,6 +1,6 @@
 # runner
 
-## open source tool / language for making and running setups
+## open source tool / language for making and running scripts
 
 ![alt text](https://github.com/tanay-pingalkar/runner/blob/beta/Frame%201.png)
 
