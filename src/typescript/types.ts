@@ -17,6 +17,8 @@ export type tag =
   | "EXIT"
   // | "RUN_ASYNC"
   // | "DO_ASYNC"
+  | "LOGO"
+  | "WELCOME"
   | "CONCURRENT"
   | "CHEATSHEET"
   | "sorry";

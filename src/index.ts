@@ -1,9 +1,10 @@
-import chalk from "chalk";
 import { Runner } from "./processes/runner";
 import { runner_app } from "./processes/interactive";
 import { fileName, _2dArray } from "./typescript/types";
 import { readFile } from "./utils/readFile";
 import { fetchFile } from "./utils/fetchFile";
+import { ansii_logo } from "./utils/ansii_logo";
+import { welcome } from "./utils/welcome";
 
 export const cli = async (args: Array<string>) => {
   let fileName: fileName = "setup";
@@ -22,10 +23,6 @@ export const cli = async (args: Array<string>) => {
 };
 
 export const runner = () => {
-  console.log(
-    chalk.cyan(
-      "welcome to runner \ntype EXIT to exit \nType CHEATSHEET to know more"
-    )
-  );
+  welcome();
   runner_app();
 };

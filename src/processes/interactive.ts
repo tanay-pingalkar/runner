@@ -3,7 +3,7 @@ import { err } from "../utils/err";
 import { Runner } from "./runner";
 
 export const runner_app: any = async () => {
-  term("> ");
+  term.bold("> ");
   term.inputField((error, input) => {
     if (error) err(error);
     new Runner(input);
