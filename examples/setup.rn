@@ -1,10 +1,15 @@
 // this are comments
 
+// this prints logo
+LOGO
 // this iS use to run big shell like installation etc, it excepts 1 arguments
 RUN "yarn init -y"
 
 // this is use to print text, it excepts 1 arguments
 PRINT "welcome to runner"
+
+// this vlers all console
+CLEAR
 
 // this is use to print text, it excepts 1 arguments
 BLUE "color full text is here"

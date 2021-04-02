@@ -16,8 +16,9 @@
     "compile": "tsc",
     "runner": "cd examples && run",
     "format": "npx prettier --write .",
-    "test":"jest",
-    "test-dev":"jest --watch --coverage"
+    "test":"jest --silent",
+    "test-pro":"jest --watch --coverage",
+    "test-cover":"jest --coverage"
   },
   "keywords": [
     "run",
