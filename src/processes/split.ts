@@ -16,6 +16,7 @@ export class Split {
     arr.forEach((ele: string) => {
       temp.push(ele.split(/"/g));
       temp[temp.length - 1].forEach((ele, i) => {
+        temp[temp.length - 1][i] = ele.trim();
         if (ele.trim() === "") {
           temp[temp.length - 1].splice(i, 1);
         }

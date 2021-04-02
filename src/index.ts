@@ -6,6 +6,7 @@ import { readFile } from "./utils/readFile";
 import { fetchFile } from "./utils/fetchFile";
 
 export const cli = async (args: Array<string>) => {
+  console.log(args);
   let fileName: fileName = "setup";
   let file: string = "";
   if (args[2]) {
@@ -18,12 +19,13 @@ export const cli = async (args: Array<string>) => {
     file = readFile(fileName);
   }
   new Runner(file);
+  return file;
 };
 
 export const runner = () => {
   console.log(
     chalk.cyan(
-      "welcome to runner \ntype EXIT to exit \n Type CHEATSHEET to know more"
+      "welcome to runner \ntype EXIT to exit \nType CHEATSHEET to know more"
     )
   );
   runner_app();
