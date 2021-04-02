@@ -10,7 +10,6 @@ export class Split {
   split() {
     this.arr = this.splitWords(this.str.split(/\n/g));
   }
-
   splitWords(arr: Array<string>): _2dArray {
     let temp: _2dArray = [];
     arr.forEach((ele: string) => {

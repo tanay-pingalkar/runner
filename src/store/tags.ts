@@ -5,15 +5,15 @@ import { BLUE, RED, GREEN } from "./print-functions/colorText";
 import { COWSAY } from "./print-functions/cowsay";
 import { PRINT } from "./print-functions/print";
 import { CONCURRENT } from "./run-functions/congurrent";
-// import { DO } from "./run-functions/do";
-import { DO_ASYNC } from "./run-functions/do_async";
-// import { RUN } from "./run-functions/run";
-import { RUN_ASYNC } from "./run-functions/run_async";
+import { DO } from "./run-functions/do";
+// import { DO_ASYNC } from "./run-functions/do_async";
+import { RUN } from "./run-functions/run";
+// import { RUN_ASYNC } from "./run-functions/run_async";
 
 export const tags: tag = {
   // run functions
-  RUN: RUN_ASYNC,
-  DO: DO_ASYNC,
+  RUN: RUN,
+  DO: DO,
   CONCURRENT: CONCURRENT,
   //RUN_ASYNC: ,
   //DO_ASYNC: DO_ASYNC,

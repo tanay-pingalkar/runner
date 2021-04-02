@@ -1,4 +1,5 @@
 import { Lexer } from "../src/processes/lexer";
+import { tag } from "../src/typescript/types";
 
 describe("lexer testing", () => {
   test("is lexer working", () => {
@@ -17,7 +18,8 @@ describe("lexer testing", () => {
       tag: "PRINT",
       argument: ["lol"],
     });
-    expect(_lexer.isExist("PRI", ["lol"], 1)).toBeFalsy();
+    const lol = "PRIfr" as tag;
+    expect(_lexer.isExist(lol, ["lol"], 1)).toBeFalsy();
     expect(_lexer.isExist("PRINT", ["lol", "ferfefe"], 2)).toBeFalsy();
   });
 });

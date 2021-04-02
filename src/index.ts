@@ -6,7 +6,6 @@ import { readFile } from "./utils/readFile";
 import { fetchFile } from "./utils/fetchFile";
 
 export const cli = async (args: Array<string>) => {
-  console.log(args);
   let fileName: fileName = "setup";
   let file: string = "";
   if (args[2]) {

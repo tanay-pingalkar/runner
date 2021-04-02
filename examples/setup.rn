@@ -1,7 +1,7 @@
 // this are comments
 
 // this iS use to run big shell like installation etc, it excepts 1 arguments
-RUN "cowsay this is runner you get it"
+RUN "yarn init -y"
 
 // this is use to print text, it excepts 1 arguments
 PRINT "welcome to runner"
@@ -14,3 +14,6 @@ COWSAY "this cowsay"
 
 // this is use to run 2 shell commands CONCURRENT, this is a beta feature and maybe contain bugs this excepts many arguments
 CONCURRENT "ls" "ls -la"
+
+//this is do for short shell commands
+DO "rm package.json"
