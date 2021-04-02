@@ -1,6 +1,6 @@
 ## Runner is open source and will live open source, there are some ways that you can contribute to us
 
-- contribution to docs
+- contribution to docs, `git checkout Docs`
 - giving feed back on git hub issue ( yes this will also help us a lot)
 - contribute to direct source code
 
