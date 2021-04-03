@@ -13,3 +13,6 @@
 |    RED     |  1! "prints red text"  |                 `BLUE "red text"`                 |               use to print red text               |
 |    EXIT    |          0! -          |                      `EXIT`                       |                exit runner scripts                |
 | CONCURRENT | many! "shell command"  | `CONCURRENT "yarn add lodash" "yarn add express"` |  this is use to run 2 shell commands CONCURRENT   |
+|   CLEAR    |          0! -          |                      `CLEAR`                      |                  clear all logs                   |
+|  WELCOME   |          0! -          |                     `WELCOME`                     |                log welcome console                |
+|    LOGO    |          0! -          |                      `EXIT`                       |              console Logo of runner               |

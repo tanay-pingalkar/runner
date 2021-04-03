@@ -2,3 +2,4 @@ node_modules
 dist
 examples/test.rn
 coverage
+.husky

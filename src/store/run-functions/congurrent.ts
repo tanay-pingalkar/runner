@@ -1,12 +1,12 @@
-import { tagContent } from "../../typescript/interfaces";
+import { CONCURRENT_arguments, tagContent } from "../../typescript/interfaces";
 import concurrently from "concurrently";
 import { err } from "../../utils/err";
 
 export const CONCURRENT_FUNCTION = async (
-  args: Array<string>
+  args: CONCURRENT_arguments
 ): Promise<boolean> => {
   try {
-    await concurrently(args);
+    await concurrently(args.cmd);
   } catch (error) {
     return err(error);
   }
@@ -14,5 +14,8 @@ export const CONCURRENT_FUNCTION = async (
 };
 export const CONCURRENT: tagContent = {
   function: CONCURRENT_FUNCTION,
-  arguments: 2,
+  arguments: {
+    all: ["cmd", "cmd", "pwd", "pwd"],
+    compulsary: ["cmd", "cmd"],
+  },
 };

@@ -1,5 +1,6 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { tags } from "../store/tags";
-import { tag, tokens, _2dArray } from "src/typescript/types";
+import { tag, tokens } from "src/typescript/types";
 import { err } from "../utils/err";
 import { Split } from "./split";
 import { isExist } from "src/typescript/interfaces";
@@ -12,14 +13,14 @@ export class Lexer extends Split {
   }
   tokenizer(): tokens {
     let i = 0;
-    for (let ele of this._2dArr()) {
+    for (const ele of this._2dArr()) {
       const givenTag = ele[0] as tag;
       const givenArgument: Array<string> = ele.slice(1);
-      const isExist = this.isExist(givenTag, givenArgument, i + 1);
-      if (isExist) {
+      const parsed = this.argumentParser(givenTag, givenArgument, i + 1);
+      if (parsed) {
         this.tokens.push({
-          tag: isExist.tag,
-          arguments: isExist.argument,
+          tag: parsed.tag,
+          arguments: parsed.argument,
           lineNumber: i + 1,
         });
       } else {
@@ -30,22 +31,41 @@ export class Lexer extends Split {
     }
     return this.tokens;
   }
-  isExist(str: tag, args: Array<string>, lineNumber: number): isExist | false {
+  argumentParser(
+    str: tag,
+    args: Array<string>,
+    lineNumber: number
+  ): isExist | false {
     const tag = tags[str];
-    if (tag) {
-      if (tag.arguments === args.length) {
-        return {
-          tag: str,
-          argument: args,
-        };
-      } else {
-        return err(
-          `only ${tag.arguments} arguments are excepted, you have ${args.length}`,
-          lineNumber
-        );
-      }
-    } else {
-      return err(`${str} is not a valid tag`, lineNumber);
+
+    // checks for if tag exist and if given arguments are equal to compulsary arguments
+    if (!tag) return err(`${str} is not a valid tag`, lineNumber);
+    const tagArg = tag.arguments;
+    if (args.length < tagArg.compulsary.length) {
+      return err(
+        `expected ${tagArg.compulsary.length} arguments but found ${args.length}`,
+        lineNumber
+      );
     }
+
+    const obj: any = tagArg.all.reduce((o, key) => {
+      return Object.assign(o, { [key]: [] });
+    }, {});
+    let i = 0;
+    for (const ele of args) {
+      if (ele.match(/:/g)) {
+        const splitted = ele.split(":");
+        if (obj[splitted[0]]) obj[splitted[0]].push(splitted[1]);
+        else return err(`${splitted[0]} is not a valid argument name`);
+      } else {
+        obj[tagArg.all[i]].push(ele);
+      }
+      i++;
+    }
+
+    return {
+      tag: str,
+      argument: obj,
+    };
   }
 }

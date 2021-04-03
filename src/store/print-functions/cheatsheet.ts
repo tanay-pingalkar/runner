@@ -1,12 +1,14 @@
 import { tagContent } from "../../typescript/interfaces";
 import { terminal as term } from "terminal-kit";
 
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export const CHEATSHEET_FUNCTION = async () => {
   console.log("welcome to cheat sheet");
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   await term.table(
     [
-      ["^TAG ", "^arguments", "^Rexample", "^Rusage"],
+      ["^RTAGS ", "^Rarguments", "^Rexample", "^Rusage"],
       [
         "RUN",
         '1! "shell command"',
@@ -49,11 +51,14 @@ export const CHEATSHEET_FUNCTION = async () => {
         '^Y RED "red text"',
         "use to print red text",
       ],
-      [" EXIT ", "0!", "^Y EXIT", "exit runner scripts"],
+      ["EXIT", "0!", "^Y EXIT", "exit runner scripts"],
+      ["CLEAR", "0!", "^Y CLEAR", "clearn all consoles"],
+      ["WELCOME", "0!", "^Y WELCOME", "log welcome console"],
+      ["LOGO", "0!", "^Y LOGO", "console runner logo"],
     ],
     {
       fit: true,
-      width: 60,
+      width: 80,
       borderChars: "lightRounded",
       borderAttr: { color: "red" },
       contentHasMarkup: true,
@@ -64,5 +69,8 @@ export const CHEATSHEET_FUNCTION = async () => {
 
 export const CHEATSHEET: tagContent = {
   function: CHEATSHEET_FUNCTION,
-  arguments: 0,
+  arguments: {
+    all: [],
+    compulsary: [],
+  },
 };

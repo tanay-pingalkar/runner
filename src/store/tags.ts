@@ -4,16 +4,19 @@ import { CHEATSHEET } from "./print-functions/cheatsheet";
 import { BLUE, RED, GREEN } from "./print-functions/colorText";
 import { COWSAY } from "./print-functions/cowsay";
 import { PRINT } from "./print-functions/print";
+import { LOGO } from "./print-functions/logo";
 import { CONCURRENT } from "./run-functions/congurrent";
-// import { DO } from "./run-functions/do";
-import { DO_ASYNC } from "./run-functions/do_async";
-// import { RUN } from "./run-functions/run";
-import { RUN_ASYNC } from "./run-functions/run_async";
+import { DO } from "./run-functions/do";
+// import { DO_ASYNC } from "./run-functions/do_async";
+import { RUN } from "./run-functions/run";
+import { WELCOME } from "./print-functions/welcome";
+import { CLEAR } from "./more-functions/clear";
+// import { RUN_ASYNC } from "./run-functions/run_async";
 
 export const tags: tag = {
   // run functions
-  RUN: RUN_ASYNC,
-  DO: DO_ASYNC,
+  RUN: RUN,
+  DO: DO,
   CONCURRENT: CONCURRENT,
   //RUN_ASYNC: ,
   //DO_ASYNC: DO_ASYNC,
@@ -25,7 +28,9 @@ export const tags: tag = {
   GREEN: GREEN,
   COWSAY: COWSAY,
   CHEATSHEET: CHEATSHEET,
-
+  LOGO: LOGO,
+  WELCOME: WELCOME,
   // more functions
   EXIT: EXIT,
+  CLEAR: CLEAR,
 };

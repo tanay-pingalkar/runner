@@ -1,11 +1,14 @@
-import { tagContent } from "../../typescript/interfaces";
+import { PRINT_arguments, tagContent } from "../../typescript/interfaces";
 
-export const PRINT_FUNCTION = (arg: Array<string>) => {
-  console.log(arg[0]);
+export const PRINT_FUNCTION = (arg: PRINT_arguments): true => {
+  console.log(arg.txt[0]);
   return true;
 };
 
 export const PRINT: tagContent = {
   function: PRINT_FUNCTION,
-  arguments: 1,
+  arguments: {
+    all: ["txt"],
+    compulsary: ["txt"],
+  },
 };

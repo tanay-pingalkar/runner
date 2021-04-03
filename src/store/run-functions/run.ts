@@ -1,10 +1,10 @@
 import { spawnSync } from "child_process";
 import { warn } from "../../utils/warn";
 import { err } from "../../utils/err";
-import { tagContent } from "../../typescript/interfaces";
+import { RUN_arguments, tagContent } from "../../typescript/interfaces";
 
-export const RUN_FUNCTION = async (arg: Array<string>) => {
-  const splitted = arg[0].split(/\s/g);
+export const RUN_FUNCTION = (arg: RUN_arguments): boolean => {
+  const splitted = arg.cmd[0].split(/\s/g);
   const spawn = spawnSync(splitted[0], splitted.splice(1));
   if (spawn.stdout) console.log(spawn.stdout.toString());
   if (spawn.error) return err(spawn.error.message.toString());
@@ -15,5 +15,8 @@ export const RUN_FUNCTION = async (arg: Array<string>) => {
 };
 export const RUN: tagContent = {
   function: RUN_FUNCTION,
-  arguments: 1,
+  arguments: {
+    all: ["cmd", "pwd"],
+    compulsary: ["cmd"],
+  },
 };
