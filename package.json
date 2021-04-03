@@ -20,8 +20,9 @@
     "test-pro": "jest --watch --coverage",
     "test-cover": "jest --coverage",
     "lint": "npx eslint ./src && npx eslint ./src --fix",
-    "ready": "npm run format && npm run lint && npm run test",
-    "prepare": "husky install"
+    "ready": "npm run format && npm run lint",
+    "prepare": "husky install",
+    "postinstall": "npm run prepare"
   },
   "husky": {
     "hooks": {
