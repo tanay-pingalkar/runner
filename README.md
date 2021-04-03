@@ -20,7 +20,6 @@
 - run `npm link`
 - run `cd examples`
 - run `run` or `run setup`
-- for developement, run `npm run dev`
 - to enter interactive mode run `runner`in your terminal
 
 ## why this is for
@@ -36,6 +35,6 @@ Visit [CHEATSHEET.md](https://github.com/tanay-pingalkar/runner/blob/beta/docs/C
 ## contributers are highly welcome
 
 runner is open source and will live open source,
-read [CONTRIBUTION.md](https://github.com/tanay-pingalkar/runner/blob/Docs/docs/CHEATSHEET.md) and [CODE_OF_CONDUCT.md](https://github.com/tanay-pingalkar/runner/blob/beta/CODE_OF_CONDUCT.md) and [UNDER_THE_HOOD.md](https://github.com/tanay-pingalkar/runner/blob/Docs/docs/UNDER_THE_HOOD.md) to know more about how contribution process work
+read [CONTRIBUTION.md](https://github.com/tanay-pingalkar/runner/blob/Docs/CONTRIBUTION.md) and [CODE_OF_CONDUCT.md](https://github.com/tanay-pingalkar/runner/blob/beta/CODE_OF_CONDUCT.md) and [UNDER_THE_HOOD.md](https://github.com/tanay-pingalkar/runner/blob/Docs/docs/UNDER_THE_HOOD.md) to know more about how contribution process work
 
 ### currently this project is in construction and is not well polished
