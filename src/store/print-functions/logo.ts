@@ -3,5 +3,8 @@ import { tagContent } from "../../typescript/interfaces";
 
 export const LOGO: tagContent = {
   function: ansii_logo,
-  arguments: 0,
+  arguments: {
+    all: [],
+    compulsary: [],
+  },
 };

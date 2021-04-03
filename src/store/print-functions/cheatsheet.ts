@@ -67,5 +67,8 @@ export const CHEATSHEET_FUNCTION = async () => {
 
 export const CHEATSHEET: tagContent = {
   function: CHEATSHEET_FUNCTION,
-  arguments: 0,
+  arguments: {
+    all: [],
+    compulsary: [],
+  },
 };

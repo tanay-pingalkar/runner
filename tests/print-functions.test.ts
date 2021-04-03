@@ -11,23 +11,43 @@ import { WELCOME } from "../src/store/print-functions/welcome";
 
 describe("print function's test", () => {
   test('PRINT "this is print"', () => {
-    expect(PRINT_FUNCTION(["this is print"])).toBeTruthy();
+    expect(
+      PRINT_FUNCTION({
+        txt: "this is print",
+      })
+    ).toBeTruthy();
   });
 
   // color text test
   test('BLUE "this is red"', () => {
-    expect(BLUE_FUNCTION(["this is blue"])).toBeTruthy();
+    expect(
+      BLUE_FUNCTION({
+        txt: "this is blue",
+      })
+    ).toBeTruthy();
   });
   test('GREEN "this is red"', () => {
-    expect(GREEN_FUNCTION(["this is green"])).toBeTruthy();
+    expect(
+      GREEN_FUNCTION({
+        txt: ["this is green"],
+      })
+    ).toBeTruthy();
   });
   test('RED "this is red"', () => {
-    expect(RED_FUNCTION(["this is red"])).toBeTruthy();
+    expect(
+      RED_FUNCTION({
+        txt: ["this is red"],
+      })
+    ).toBeTruthy();
   });
 
   // cowsay test
   test('COWSAY "this is cowsay"', () => {
-    expect(COWSAY_FUNCTION(["this is cowsay"])).toBeTruthy();
+    expect(
+      COWSAY_FUNCTION({
+        txt: ["this is cowsay"],
+      })
+    ).toBeTruthy();
   });
 
   //cheatsheet / welcome / logo test

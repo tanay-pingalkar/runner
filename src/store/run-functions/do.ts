@@ -1,10 +1,10 @@
 import { execSync } from "child_process";
-import { tagContent } from "../../typescript/interfaces";
+import { DO_arguments, tagContent } from "../../typescript/interfaces";
 import { err } from "../../utils/err";
 
-export const DO_FUNCTION = async (arg: Array<string>) => {
+export const DO_FUNCTION = (arg: DO_arguments): boolean => {
   try {
-    execSync(arg[0], { stdio: "ignore" });
+    execSync(arg.cmd[0], { stdio: "ignore" });
   } catch {
     return err("an unusual error has occure");
   }
@@ -12,5 +12,8 @@ export const DO_FUNCTION = async (arg: Array<string>) => {
 };
 export const DO: tagContent = {
   function: DO_FUNCTION,
-  arguments: 1,
+  arguments: {
+    all: ["cmd", "pwd"],
+    compulsary: ["cmd"],
+  },
 };

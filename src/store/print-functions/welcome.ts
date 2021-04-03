@@ -3,5 +3,8 @@ import { tagContent } from "../../typescript/interfaces";
 
 export const WELCOME: tagContent = {
   function: welcome,
-  arguments: 0,
+  arguments: {
+    all: [],
+    compulsary: [],
+  },
 };

@@ -17,11 +17,7 @@ export class Runner extends Lexer {
     console.log(
       chalk.blue("\n ["),
       chalk.white(token.lineNumber),
-      chalk.blue("]"),
-      chalk.cyan("running :"),
-      chalk.yellow(
-        chalk.bold(token.tag + ' "' + token.arguments.join('" "') + '" \n')
-      )
+      chalk.blue("]")
     );
     const res = await tags[token.tag].function(token.arguments);
     if (!res || !this.tokens[this.i + 1]) return;

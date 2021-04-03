@@ -1,32 +1,41 @@
 import chalk from "chalk";
-import { tagContent } from "../../typescript/interfaces";
+import { COLOR_arguments, tagContent } from "../../typescript/interfaces";
 
 // red
-export const RED_FUNCTION = (arg: Array<string>) => {
-  console.log(chalk.redBright(arg[0]));
+export const RED_FUNCTION = (arg: COLOR_arguments) => {
+  console.log(chalk.redBright(arg.txt[0]));
   return true;
 };
 export const RED: tagContent = {
   function: RED_FUNCTION,
-  arguments: 1,
+  arguments: {
+    all: ["txt"],
+    compulsary: ["txt"],
+  },
 };
 
 //blue
-export const BLUE_FUNCTION = (arg: Array<string>) => {
-  console.log(chalk.blue(arg[0]));
+export const BLUE_FUNCTION = (arg: COLOR_arguments) => {
+  console.log(chalk.blue(arg.txt[0]));
   return true;
 };
 export const BLUE: tagContent = {
   function: BLUE_FUNCTION,
-  arguments: 1,
+  arguments: {
+    all: ["txt"],
+    compulsary: ["txt"],
+  },
 };
 
 //green
-export const GREEN_FUNCTION = (arg: Array<string>) => {
-  console.log(chalk.green(arg[0]));
+export const GREEN_FUNCTION = (arg: COLOR_arguments) => {
+  console.log(chalk.green(arg.txt[0]));
   return true;
 };
 export const GREEN: tagContent = {
   function: GREEN_FUNCTION,
-  arguments: 1,
+  arguments: {
+    all: ["txt"],
+    compulsary: ["txt"],
+  },
 };

@@ -6,5 +6,8 @@ export const CLEAR_FUNCTION = (): boolean => {
 };
 export const CLEAR: tagContent = {
   function: CLEAR_FUNCTION,
-  arguments: 0,
+  arguments: {
+    all: [],
+    compulsary: [],
+  },
 };

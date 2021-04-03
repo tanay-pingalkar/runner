@@ -7,5 +7,8 @@ const EXIT_FUNCTION = async (): Promise<never> => {
 };
 export const EXIT: tagContent = {
   function: EXIT_FUNCTION,
-  arguments: 0,
+  arguments: {
+    all: [],
+    compulsary: [],
+  },
 };
