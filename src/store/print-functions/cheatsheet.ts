@@ -1,8 +1,10 @@
 import { tagContent } from "../../typescript/interfaces";
 import { terminal as term } from "terminal-kit";
 
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export const CHEATSHEET_FUNCTION = async () => {
   console.log("welcome to cheat sheet");
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   await term.table(
     [

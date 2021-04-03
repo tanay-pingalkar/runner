@@ -13,7 +13,7 @@ describe("print function's test", () => {
   test('PRINT "this is print"', () => {
     expect(
       PRINT_FUNCTION({
-        txt: "this is print",
+        txt: ["this is print"],
       })
     ).toBeTruthy();
   });
@@ -22,7 +22,7 @@ describe("print function's test", () => {
   test('BLUE "this is red"', () => {
     expect(
       BLUE_FUNCTION({
-        txt: "this is blue",
+        txt: ["this is blue"],
       })
     ).toBeTruthy();
   });

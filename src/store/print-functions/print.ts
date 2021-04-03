@@ -1,6 +1,6 @@
 import { PRINT_arguments, tagContent } from "../../typescript/interfaces";
 
-export const PRINT_FUNCTION = (arg: PRINT_arguments) => {
+export const PRINT_FUNCTION = (arg: PRINT_arguments): true => {
   console.log(arg.txt[0]);
   return true;
 };

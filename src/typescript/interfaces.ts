@@ -3,11 +3,12 @@ import { tag } from "./types";
 
 export interface token {
   tag: tag;
-  arguments: object;
+  arguments: Record<string, unknown>;
   lineNumber: number;
 }
 
 export interface tagContent {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   function: (arg: any) => boolean | Promise<boolean>;
   arguments: {
     all: Array<string>;
@@ -42,5 +43,5 @@ export type tags = {
 };
 export interface isExist {
   tag: tag;
-  argument: object;
+  argument: Record<string, unknown>;
 }

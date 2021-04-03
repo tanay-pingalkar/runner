@@ -4,12 +4,12 @@ import { tags } from "../store/tags";
 import { Lexer } from "./lexer";
 
 export class Runner extends Lexer {
-  i: number = 0;
+  i = 0;
   constructor(str: string) {
     super(str);
     this.start();
   }
-  async start() {
+  async start(): Promise<void> {
     const token: token = this.tokens[this.i];
     if (!token) {
       return;

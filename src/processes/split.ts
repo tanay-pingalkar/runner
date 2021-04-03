@@ -7,7 +7,7 @@ export class Split {
     this.str = str;
     this.split();
   }
-  split() {
+  split(): void {
     this.arr = this.splitWords(this.str.split(/\n/g));
   }
   splitWords(arr: Array<string>): _2dArray {

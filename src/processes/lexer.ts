@@ -1,5 +1,6 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { tags } from "../store/tags";
-import { tag, tokens, _2dArray } from "src/typescript/types";
+import { tag, tokens } from "src/typescript/types";
 import { err } from "../utils/err";
 import { Split } from "./split";
 import { isExist } from "src/typescript/interfaces";
@@ -12,7 +13,7 @@ export class Lexer extends Split {
   }
   tokenizer(): tokens {
     let i = 0;
-    for (let ele of this._2dArr()) {
+    for (const ele of this._2dArr()) {
       const givenTag = ele[0] as tag;
       const givenArgument: Array<string> = ele.slice(1);
       const parsed = this.argumentParser(givenTag, givenArgument, i + 1);
@@ -51,7 +52,7 @@ export class Lexer extends Split {
       return Object.assign(o, { [key]: [] });
     }, {});
     let i = 0;
-    for (let ele of args) {
+    for (const ele of args) {
       if (ele.match(/:/g)) {
         const splitted = ele.split(":");
         if (obj[splitted[0]]) obj[splitted[0]].push(splitted[1]);
