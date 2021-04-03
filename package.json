@@ -22,6 +22,11 @@
     "lint": "npx eslint ./src && npx eslint ./src --fix",
     "ready": "npm run format && npm run lint && npm run test"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "echo lol"
+    }
+  },
   "keywords": [
     "run",
     "runner"
@@ -34,6 +39,7 @@
     "concurrently": "^6.0.0",
     "cowsay": "^1.1.1",
     "esm": "^3.2.25",
+    "husky": "^6.0.0",
     "ora": "^5.4.0",
     "spawn-command": "^0.0.2-1",
     "terminal-kit": "^2.0.7"
