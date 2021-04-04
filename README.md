@@ -9,7 +9,7 @@
 - concurrency
 - gist support `run gist:GIST_ID`
 - simple and easy
-- interractive mode
+- cli builder `run you_cli --build`
 
 ## running on local machine
 
