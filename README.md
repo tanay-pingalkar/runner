@@ -1,6 +1,6 @@
 # runner
 
-## open source tool / language for making and running scripts
+## open source tool for making setups,cli and scripts and running them in just a click.
 
 ![alt text](https://github.com/tanay-pingalkar/runner/blob/beta/Frame%201.png)
 
