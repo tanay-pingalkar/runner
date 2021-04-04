@@ -1,4 +1,7 @@
 node_modules/
 coverage/
 dist/
-tests/
+examples/
+docs/
+.husky
+prettier.config.js
