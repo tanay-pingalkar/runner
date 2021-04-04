@@ -6,10 +6,10 @@
 
 ## features
 
-- concurrency
 - gist support `run gist:GIST_ID`
-- simple and easy
 - cli builder `run you_cli --build`
+- [concurrency](https://github.com/kimmobrunfeldt/concurrently)
+- simple, easy and one click to run
 
 ## running on local machine
 
@@ -30,7 +30,7 @@ this is a basic tool for grouping scripts and running them together.
 
 After running `run setup`, it has created a test.rn file where you can write code like setup.rn have and can run that file by `run test`
 
-Visit [CHEATSHEET.md](https://github.com/tanay-pingalkar/runner/blob/beta/docs/CHEATSHEET.md) or [docs](https://github.com/tanay-pingalkar/runner/blob/Docs/docs/) to learn more about runner or go to interactive mode by running `runner` in terminal and type `CHEATSHEET` to see cheatsheet in your terminal.
+Visit [CHEATSHEET.md](https://github.com/tanay-pingalkar/runner/blob/beta/docs/CHEATSHEET.md) and [CLI.md](https://github.com/tanay-pingalkar/runner/blob/beta/docs/CLI.md) or [docs](https://github.com/tanay-pingalkar/runner/blob/Docs/docs/) to learn more about runner or go to interactive mode by running `runner` in terminal and type `CHEATSHEET` to see cheatsheet in your terminal.
 
 ## contributers are highly welcome
 
