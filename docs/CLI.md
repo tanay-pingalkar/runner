@@ -9,4 +9,3 @@
 `runner` command opens interactive mode interminal
 
 ## `run file_name --build`
-
