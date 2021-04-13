@@ -7,7 +7,7 @@ export const build_cli = (str: string, fileName: string): void => {
   );
   writeFileSync(
     process.cwd() + "/runner_build/bin",
-    `#!/usr/bin/env node \n require = require('esm')(module /*, options*/);const runner_1=require('../dist/processes/runner');new runner_1.Runner('${str}')`
+    `#!/usr/bin/env node \n require = require('esm')(module /*, options*/);const runner_1=require('');new runner_1.Runner('${str}')`
   );
   writeFileSync(
     process.cwd() + "/runner_build/package.json",

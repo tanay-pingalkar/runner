@@ -2,7 +2,7 @@
   "name": "@tanay-pingalkar/runner",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "bin": {
     "run": "./bin/run",
     "runner": "./bin/runner",
@@ -22,7 +22,8 @@
     "lint": "npx eslint . && npx eslint . --fix",
     "ready": "npm run format && npm run lint",
     "prepare": "husky install",
-    "postinstall": "npm run prepare"
+    "postinstall": "npm run prepare",
+    "prepublish": "npm run compile"
   },
   "husky": {
     "hooks": {
