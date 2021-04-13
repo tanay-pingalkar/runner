@@ -15,7 +15,11 @@ export type tag =
   | "CONCURRENT"
   | "COWSAY"
   | "EXIT"
-  | "RUN_ASYNC"
-  | "DO_ASYNC"
+  // | "RUN_ASYNC"
+  // | "DO_ASYNC"
+  | "CLEAR"
+  | "LOGO"
+  | "WELCOME"
   | "CONCURRENT"
+  | "CHEATSHEET"
   | "sorry";

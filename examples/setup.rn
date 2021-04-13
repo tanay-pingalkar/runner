@@ -1,10 +1,15 @@
 // this are comments
 
+// this prints logo
+LOGO
 // this iS use to run big shell like installation etc, it excepts 1 arguments
-RUN "cowsay this is runner you get it"
+RUN "yarn init -y"
 
 // this is use to print text, it excepts 1 arguments
 PRINT "welcome to runner"
+
+// this vlers all console
+CLEAR
 
 // this is use to print text, it excepts 1 arguments
 BLUE "color full text is here"
@@ -13,7 +18,7 @@ BLUE "color full text is here"
 COWSAY "this cowsay"
 
 // this is use to run 2 shell commands CONCURRENT, this is a beta feature and maybe contain bugs this excepts many arguments
-CONCURRENT "ls" "touch lol.js"
+CONCURRENT "ls" "ls -la"
 
-// this is use to run shell commands asyncronoumously, this is a beta feature and maybe contain bugs this excepts 1 arguments
-DO_ASYNC "rm lol.js"
+//this is do for short shell commands
+DO "rm package.json"

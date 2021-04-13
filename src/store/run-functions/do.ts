@@ -1,16 +1,21 @@
 import { execSync } from "child_process";
-import { warn } from "../../utils/warn";
-import { tagContent } from "../../typescript/interfaces";
+import { DO_arguments, tagContent } from "../../typescript/interfaces";
+import { err } from "../../utils/err";
 
-export const DO_FUNCTION = (arg: Array<string>) => {
+export const DO_FUNCTION = (arg: DO_arguments): boolean => {
   try {
-    execSync(arg[0], { stdio: "ignore" });
+    let cwd = "";
+    if (arg.pwd[0]) cwd = arg.pwd[0];
+    execSync(arg.cmd[0], { stdio: "ignore", cwd: process.cwd() + cwd });
   } catch {
-    warn("an unusual error has occure");
+    return err("an unusual error has occure");
   }
-  return;
+  return true;
 };
 export const DO: tagContent = {
   function: DO_FUNCTION,
-  arguments: 1,
+  arguments: {
+    all: ["cmd", "pwd"],
+    compulsary: ["cmd"],
+  },
 };

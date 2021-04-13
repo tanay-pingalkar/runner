@@ -1,0 +1,7 @@
+node_modules/
+coverage/
+dist/
+examples/
+docs/
+.husky
+prettier.config.js
