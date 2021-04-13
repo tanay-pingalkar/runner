@@ -21,7 +21,6 @@
     "lint": "npx eslint . && npx eslint . --fix",
     "ready": "npm run format && npm run lint",
     "prepare": "husky install",
-    "postinstall": "npm run prepare",
     "prepublish": "npm run compile"
   },
   "husky": {
