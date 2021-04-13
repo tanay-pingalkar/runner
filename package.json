@@ -27,7 +27,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run ready && git add -A"
+      "pre-commit": "npm run format && git add -A"
     }
   },
   "keywords": [
