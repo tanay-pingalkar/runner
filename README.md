@@ -11,16 +11,9 @@
 - [concurrency](https://github.com/kimmobrunfeldt/concurrently)
 - simple, easy and one click to run
 
-## running on local machine
-
-- fork the repo
-- clone forked repo
-- run `npm install`
-- run `npm run compile`
-- run `npm link`
-- run `cd examples`
-- run `run` or `run setup`
-- to enter interactive mode run `runner`in your terminal
+## installing
+- `npm i @tanay-pingalkar/runner -g`
+- `run gist:9555eb7f9915a9ce4f0e32c9c213e1fa`
 
 ## why this is for
 
