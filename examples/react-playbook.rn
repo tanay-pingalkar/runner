@@ -1,0 +1,32 @@
+// i found a beautifull repo on internet call react-playbook by rajjet, this is runner to setup rajjet's full repo to test runner
+// to run this is file type `run gist:683a8098c2d00d02c74ea92e46c78aa8` or `run react-playbook`
+
+// first it will clone his repo
+RUN "git clone https://github.com/rajjeet/react-playbook"
+
+// install all packages
+RUN "npm intall" "/react-playbook/packages/gatsby-starter"
+RUN "npm intall" "react-playbook/packages/jest-enzyme"
+RUN "npm intall" "/react-playbook/packages/react-basic"
+RUN "npm intall" "/react-playbook/packages/react-hooks"
+RUN "npm intall" "/react-playbook/packages/react-redux"
+RUN "npm intall" "/react-playbook/packages/react-testing-library"
+RUN "npm intall" "/react-playbook/packages/redux-saga"
+RUN "npm intall" "/react-playbook/packages/react-redux"
+RUN "npm intall" "/react-playbook/packages/redux-thunk"
+RUN "npm intall" "/react-playbook/packages/typescript-jest"
+RUN "npm install" "/react-playbook/packages/typescript"
+
+// then print how to run all packages
+PRINT "run `npm start` to run gatsby starter"
+PRINT "run `npm test` to run jest-enzyme"
+PRINT "run `npm start` to run react-basic"
+PRINT "run `npm start` to run react-hooks"
+PRINT "run `npm start` to run react redux"
+PRINT "run `npm test` to run react-testing-library"
+PRINT "run `npm start` to run redux saga"
+PRINT " run `npm start` to run redux-thunk"
+PRINT " run `npm test` to run typescript-jest"
+PRINT " run `npm run type-check` to run typescript"
+
+BLUE "react-playbook is completely installed on you machine in just a click with the help of runner."
