@@ -1,12 +1,11 @@
 {
   "name": "@tanay-pingalkar/runner",
-  "version": "1.0.0",
+  "version": "1.4.0",
   "description": "",
   "main": "dist/index.js",
   "bin": {
-    "run": "./bin/run",
-    "runner": "./bin/runner",
-    "@tanay-pingalkar/runner": "./bin/runner"
+    "run": "bin/run",
+    "runner": "bin/runner"
   },
   "publishConfig": {
     "access": "public"
@@ -22,7 +21,6 @@
     "lint": "npx eslint . && npx eslint . --fix",
     "ready": "npm run format && npm run lint",
     "prepare": "husky install",
-    "postinstall": "npm run prepare",
     "prepublish": "npm run compile"
   },
   "husky": {
