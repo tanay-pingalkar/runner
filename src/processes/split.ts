@@ -19,7 +19,7 @@ export class Split {
         if (ele.trim() === "") {
           temp[temp.length - 1].splice(i, 1);
         }
-        if (ele.startsWith("//")) {
+        if (ele.trim().startsWith("//")) {
           temp[temp.length - 1].splice(i);
         }
       });

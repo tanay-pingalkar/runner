@@ -10,3 +10,5 @@ this command will build you .rn file into a cli in just a click. You just have t
 ## `runner`
 
 `runner` command opens interactive mode interminal
+
+## `run file_name --build`
